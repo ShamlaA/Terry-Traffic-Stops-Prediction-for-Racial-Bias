@@ -11,6 +11,7 @@ In this project we aim to achieve the following objectives:
 * Do the differences in races between the officer and the subject play a role in frisks arrests?
 * Determine the most common outcome of the Seattle Terry Stops and what it means
 * Develop a model that can accurately predict the likelihood of an arrest occurring during a Terry Stop
+
 This project will be divided into three workbooks, each focusing on a specific aspect of the process. We will start by exploring the data and cleaning, followed by exploratory analysis aiming to addressing the first three objectives which are racial disparity during Terry Stops, role of race in the Terry Stops and the most common outcome of the Terry Stops in Seattle. We will then move on to the third workbook where we will be addressing the fourth objective of developing a comprehensive predictive model that can accurately predict the likelihood of an arrest following a Terry Stop based on various factors.
 In this project we will be using the data obtained from City of Seattle on https://data.seattle.gov/Public-Safety/Terry-Stops.
 
