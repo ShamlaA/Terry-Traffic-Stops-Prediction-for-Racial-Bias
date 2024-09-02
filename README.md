@@ -44,7 +44,7 @@ This is a continuation of the project we started by preprocessing. In this part 
 
 ## Yearly Terry Stops pattern covering the time period in the dataset
 We look at the pattern of the Terry stops in Seattle for general overview.
-![alt text](image-5.png)
+![alt text](Images/image-5.png)
 
 The spike in Terry Stops in Seattle in 2018 was a direct response to the surge in gun violence in the city. The Seattle Police Department's decision to increase stop-and-frisk activities was part of a broader strategy to address public safety concerns and reduce violent crime.
 The drastic fall in Terry Stops in Seattle from 2019 to 2021 can be attributed to a combination of factors, including increased scrutiny and accountability due to police reform measures, the impact of protests and calls for reform (following the George Floyd incident), changes in crime trends, legal and community challenges, and operational shifts influenced by the pandemic. These factors collectively contributed to a reduction in the number of Terry Stops conducted by law enforcement during this period.
@@ -69,13 +69,13 @@ Native American	                         4,111 = 	                          0.00
 
 Native Hawaiian or Pacific Islander	     1,600 = 	                          0.002 (This race is aggregated with the 'Other race' for better calculation which comes to 0.022)
 This population data is available at https://worldpopulationreview.com/us-cities/washington/seattle
-![alt text](image-6.png)
+![alt text](Images/image-6.png)
 
 Ok so we see here that the highest stop ratio is for White with 49% and African American follows second with 30%. Even though the White is the dominant race in Seattle (63%), the proportion of the stop ratio vs the population is ok as is with all the other races except the Native Americans and the African Americans. With both these races the result is worrisome. Even though they are only 0.005% and 7% of the population respectively, the proportion of the stop ratio is 2.7% and 30%. This makes these races the most affected races by the Seattle Terry Stop.
 
 ## Frisk Data
 Let us do the frisk flag test to see what happens.
-![alt text](image.png)
+![alt text](Images/image.png)
 
 As we can see it here as well the level of frisk instances between white and African American is almost parallel. Though the White race out numbers the African American race by a huge margin, the frisk instances are almost equal which can be an indication of the fact that there is a tendency towards racial bias.
 The higher frequency of frisk instances among the African American community during Terry stops in Seattle may stem from several interconnected factors:
@@ -86,25 +86,25 @@ The higher frequency of frisk instances among the African American community dur
 
 ## Arrest Data
 Let us further check what happens with the arrest instances.
-![alt text](image-1.png)
+![alt text](Images/image-1.png)
 
 This as well suggests the same fact. All the other races have almost 10% arrest instances out of the total stops they get while the African American race gets about 12% of arrest instances out of the total stops.
 
 ## Racial Relationship Data
 Here we created 2 dataframes: One where officer and subject are of the same race and another where they are not.
-![alt text](image-2.png)
+![alt text](Images/image-2.png)
 
 There are more frisks and arrests among the same races, but fewer among different race. There could be a couple of reasons for this.  One is that an officer whose race is different is more hesitant and doesn't want to risk the possibility of their actions being considered racist.  Another explanation is that the officers in Seattle are assigned to beats where the local demographics match their own.
 
 ## Frisk to Arrest Data
 Let us do a comparison between the number of frisks and the number of arrests.
-![alt text](image-3.png)
+![alt text](Images/image-3.png)
 
 It is interesting to see that there is a huge gap between the number of people frisked and the number of people arrested. This could sound like a faulty call by the officers frisking people without enough information which could mean violation of people's 4th amendment right. On the other hand it could mean a cautious approach by officers, focusing on immediate safety concerns without escalating to arrests unless justified. However, it's important to continuously review these practices to ensure they align with legal standards and community expectations.
 
 ## Terry Stop Common Outcome
 Finally we tried to identify the common outcome of the stop resolutions.
-![alt text](image-4.png)
+![alt text](Images/image-4.png)
 
 The most common outcome of the Seattle Terry Stop resolution happens to be "Field Contact". While field contacts are generally less intrusive than formal stops, a high frequency should be assessed to ensure it aligns with the goals of the resolution, maintains community trust, and is in line with fair policing practices.
 This result confirms that the numerous frisk instances are actually more of a preventive measures than violations of people's rights but extreme caution is necessary.
@@ -120,16 +120,16 @@ A lot of our data is non-numerical as a result we OneHotEncoded our features to 
 For this task we compared three different classification models with confusion matrix plot for each one and finally we dfined a function that identifies the best model.
 
 1. ## The Logistic Regression Model
-![alt text](image-7.png)
+![alt text](Images/image-7.png)
 
 2. ## K-Nearest-Neighbors (KNN) Classifier
 Determined the optimal k value for KNN classification and built and evaluated the KNN model using the optimal k value:
-![alt text](image-8.png)
+![alt text](Images/image-8.png)
 
 3. ## Decision Trees
 Grid Search for Optimal Parameters
 We begun by running a grid search to identify the optimal parameters for our decision tree model and used the best parameters identified from grid search to build and evaluate our decision tree model.
-![alt text](image-9.png)
+![alt text](Images/image-9.png)
 
 ## Identifying the BEST MODEL
 Finally we defined a function called evaluate_models() which takes our feature and target variables with 20% test size and random state of 42. The function returns the best model based on the highest F1 score. The reason we decided to use the F1 score as the final weighing parameter is because we have class imbalance.
