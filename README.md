@@ -124,6 +124,7 @@ For this task we compared three different classification models with confusion m
 
 2. ## K-Nearest-Neighbors (KNN) Classifier
 Determined the optimal k value for KNN classification and built and evaluated the KNN model using the optimal k value:
+
 ![alt text](Images/image-8.png)
 
 3. ## Decision Trees
