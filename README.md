@@ -129,6 +129,7 @@ Determined the optimal k value for KNN classification and built and evaluated th
 3. ## Decision Trees
 Grid Search for Optimal Parameters
 We begun by running a grid search to identify the optimal parameters for our decision tree model and used the best parameters identified from grid search to build and evaluate our decision tree model.
+
 ![alt text](Images/image-9.png)
 
 ## Identifying the BEST MODEL
